@@ -43,8 +43,8 @@ public class TrianguloRectangulo {
 	 * Metodo que calcula y devuelve el area de un triangulo rectangulo
 	 * @return		area del triangulo rectangulo
 	 */
-	public int area() {
-		int res = (this.a * this.b) / 2;
+	public double area() {
+		double res = (double)Math.round(((double)(this.a * this.b) / 2)*100)/100;
 		
 		return res;
 	}
@@ -55,7 +55,9 @@ public class TrianguloRectangulo {
 	 * @return		hipotenusa de un triangulo rectangulo
 	 */
 	public double hipotenusa(){
-		this.c = Math.sqrt((this.a * this.a) + (this.b * this.b));
+		this.c = (double)Math.sqrt((this.a * this.a) + (this.b + this.b));
+		this.c = Math.round((double)(this.c * 100)/100);
+
 		
 		return c;
 	}
@@ -66,7 +68,7 @@ public class TrianguloRectangulo {
 	 * @return		perimetro de un triangulo rectangulo
 	 */
 	public double perimetro() {
-		double res = this.a + this.b + this.hipotenusa();
+		double res = (double)Math.round((double)(this.a + this.b + this.hipotenusa())*100)/100;
 		
 		return res;
 	}

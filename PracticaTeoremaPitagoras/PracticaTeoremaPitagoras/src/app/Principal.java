@@ -16,7 +16,7 @@ public class Principal {
         try {
             square1 = new TrianguloRectangulo(lado1, lado2);
            
-            int area1 = square1.area();
+            double area1 = square1.area();
             double perimetro1 = square1.perimetro();
            
            
@@ -27,7 +27,7 @@ public class Principal {
         TrianguloRectangulo square2 = new TrianguloRectangulo();
        
        
-        int area2 = square2.area();
+        double area2 = square2.area();
         double perimetro2 = square2.perimetro();
 
 
